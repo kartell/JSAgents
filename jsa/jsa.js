@@ -59,13 +59,13 @@
         JSA.freeze(document);        
         
         // define policy timeout
-//        JSA.policy_timeout = setTimeout(function () {
-//           
-//            // block document access, close document
-//            document.write('ERROR: Policy files could not be loaded');
-//            document.close();
-//            JSA.warn("Policy could not be loaded for this site.");
-//        }, 2500);
+        JSA.policy_timeout = setTimeout(function () {
+           
+            // block document access, close document
+            document.write('ERROR: Policy files could not be loaded');
+            document.close();
+            JSA.warn("Policy could not be loaded for this site.");
+        }, 2500);
 
         // check async policy load
         JSA.si = setInterval (function () {
