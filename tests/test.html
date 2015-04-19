@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- no code before this snippet -->
+		<meta charset="utf-8">
+		<script id="jsa" type="text/javascript" src="../jsa/jsa.js"></script>
+		<!-- now load everything else -->
+	</head>
+	<body>
+	   <h1>hello</h1>
+	   <h2>goodbye</h2>
+	   
+	   <div class="evil"><script>console.log('evil but legit 1')</script></div>
+	   <div class="evil"><script>console.log('evil but legit 2')</script></div>
+	   <div id="evil">
+	       <script>console.log('evil but legit 3')</script>
+	       <iframe src="//evil.com" onload="javascript:alert(4)"></iframe>
+	   </div>
+	   
+	   <p>some text</p>
+	   <!-- some test garbage here -->
+    	   <iframe src="//evil.com" onload="javascript:alert(2)"></iframe>    	   
+    	   <dl>
+    	       <dt>hello</dt><dd>goodbye</dd>
+    	       <dt>hello</dt><dd>goodbye</dd>
+    	       <dt>hello</dt><dd>goodbye</dd>
+    	       <dt>hello</dt><dd>goodbye</dd>
+    	       <dt>hello</dt><dd>goodbye</dd>
+    	       <dt>hello</dt><dd>goodbye</dd>
+    	       <dt>hello</dt><dd>goodbye</dd>
+    	       <dt>hello</dt><dd>goodbye</dd>
+    	   </dl>
+    	   
+    	   <iframe/onload=alert(888)></iframe>
+    	   <svg OnBluR=alert(777) onload=alert(666)></svg>    
+    	   
+    	   <a href="         
+    	       java
+script&colon;alert(5)">CLICKME</a>
+    	   <a href="data&colon;x,<h1>xss</h1>">CLICKME</a>
+    	   <applet code=Test></applet>
+    	   
+    	   <input autofocus onfocus=alert(999)>
+    	   
+    	   <form id=document><input id=write>
+    	       <iframe src=javascript:alert(5)></iframe>
+    	   
+    	   <svg><script>alert(1)<b>
+    	   <script>
+    	       console.warn('INJECTED CODE');
+    	   </script>
+	   <!-- end test garbage -->
+	</body>
+</html>
